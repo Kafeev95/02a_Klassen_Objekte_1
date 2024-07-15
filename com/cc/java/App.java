@@ -14,6 +14,8 @@ public class App {
         System.out.println("Blick von aussen: " + cat);
         cat.tellYourAddress();
 
+        
+
         System.out.println("---------------------------------------");
         
         Cat cat2 = new Cat();
@@ -22,8 +24,11 @@ public class App {
 
 
     }
+      // Statische Methode, die in der Klasse ausgeführt wird ...
 
-   
+   public static void output(String outputStr){
+    System.out.println(outputStr);
+   }
 
 }
 
