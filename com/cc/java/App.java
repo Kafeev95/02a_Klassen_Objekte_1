@@ -11,16 +11,17 @@ public class App {
         // Cat --> Referenztyp(Klasse)
 
         Cat cat = new Cat();
-        System.out.println("Blick von aussen: " + cat);
-        cat.tellYourAddress();
+        // IMPLIZITE Typenumwandlung Cat --> String
+        output("Blick von aussen: " + cat);
+        output("Blick von aussen: " + cat.getInstanceVariable());
 
         
 
         System.out.println("---------------------------------------");
         
         Cat cat2 = new Cat();
-        System.out.println("Blick von aussen: " + cat2);
-        cat2.tellYourAddress();
+        output("Blick von aussen: " + cat2);
+        output("Blick von aussen: " + cat2.getInstanceVariable());
 
 
     }
